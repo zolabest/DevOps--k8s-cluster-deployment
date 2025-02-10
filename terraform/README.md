@@ -20,20 +20,33 @@ project-directory/
 ├── outputs.tf        # Outputs for monitoring and debugging
 ├── backend.tf        # Backend configuration for state management
 └── README.md         # Documentation for the setup
+
+
 Steps to Set Up
+
+===============
+
 1.⁠ ⁠Clone the Repository
+
+
 Clone this repository to your local machine or create a new Terraform project directory:
 
 git clone https://github.com/zolabest/DevOps-k8s-cluster-deployment.git
-cd terraform-aws-setup
+
+cd terraform
+
 2.⁠ ⁠Define Your Variables
+
 Update the variables.tf file to define your AWS region or any other required variables:
 
 variable "region" {
   description = "The AWS region to deploy resources in"
   default     = "us-east-1"
 }
+
+
 3.⁠ ⁠Configure the Backend
+
 In backend.tf, configure the remote backend for state management:
 
 terraform {
@@ -45,23 +58,39 @@ terraform {
     dynamodb_table = "your-dynamodb-lock-table"
   }
 }
+
 4.⁠ ⁠Initialize Terraform
+
+
 Run the following command to initialize Terraform and install necessary providers:
 
 
+
 terraform init
+
+
 5.⁠ ⁠Plan the Infrastructure
+
+
 Preview the resources Terraform will create:
 
 
 terraform plan
+
+
 6.⁠ ⁠Apply the Configuration
+
+
 Deploy the resources:
 
 terraform apply
+
+
 Type yes when prompted to confirm the changes.
 
 Components Created
+
+
 VPC
 A VPC with CIDR block 10.0.0.0/16.
 A public Subnet with CIDR block 10.0.1.0/24.
@@ -88,7 +117,10 @@ Cleanup
 To delete the resources and avoid ongoing costs, run:
 
 
+
 terraform destroy
+
+
 Type yes when prompted.
 
 Notes
