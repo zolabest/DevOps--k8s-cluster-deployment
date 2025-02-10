@@ -24,7 +24,7 @@ Steps to Set Up
 1.⁠ ⁠Clone the Repository
 Clone this repository to your local machine or create a new Terraform project directory:
 
-git clone https://github.com/zolabest/DevOps-Challenge.git 
+git clone https://github.com/zolabest/DevOps--k8s-cluster-deployment.git
 cd terraform-aws-setup
 2.⁠ ⁠Define Your Variables
 Update the variables.tf file to define your AWS region or any other required variables:
