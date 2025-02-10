@@ -23,7 +23,7 @@ Exposed the Deployment using a LoadBalancer Service to ensure accessibility on t
 
 Deployment and Service YAML configurations were applied:
 
-kubectl apply -f <path_to_yaml_file>
+kubectl apply -f /Users/ZolaTech/Desktop/kubernetes_cluster_resources.yaml
 
 3. Verified Deployment
 
