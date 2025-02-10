@@ -47,7 +47,7 @@ A Minikube tunnel was created to expose the LoadBalancer service.
 
 minikube tunnel
 
-The NGINX web server was successfully accessed in a browser at http://localhost:
+The NGINX web server was successfully accessed in a browser at http://localhost:80
 
 
 
